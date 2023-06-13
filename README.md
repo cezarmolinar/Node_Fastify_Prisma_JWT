@@ -1,8 +1,11 @@
 # Node_Fastify_Prisma_JWT
-Template inicial para backend Node com Fastify, ORM Prisma e autenticação JWT e autorização RBAC
+Template inicial para backend Node com Fastify, ORM Prisma, autenticação JWT e autorização RBAC
 
 ### Pré-requisitos globais
 `npm -g typescript ts-node`
+
+### DataBase 
+`npx prisma migrate dev`
 
 ### Instalação
 `npm install`
