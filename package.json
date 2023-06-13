@@ -1,0 +1,42 @@
+{
+  "name": "node_fastify_prisma_jwt",
+  "version": "1.0.0",
+  "description": "Template inicial para backend Node com Fastify, ORM Prisma e autenticação JWT e autorização RBAC",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "prebuild": "tsc --noEmit",
+    "build": "tsup src --out-dir build ",
+    "lint": "eslint src --ext .ts --fix",
+    "start": "node build/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:cezarmolinar/Node_Fastify_Prisma_JWT.git"
+  },
+  "author": "Cezar A. Molinar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cezarmolinar/Node_Fastify_Prisma_JWT/issues"
+  },
+  "homepage": "https://github.com/cezarmolinar/Node_Fastify_Prisma_JWT#readme",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^1.2.0",
+    "@types/bcryptjs": "^2.4.2",
+    "@types/node": "^20.2.5",
+    "eslint": "^8.42.0",
+    "prisma": "^4.15.0",
+    "tsx": "^3.12.7"
+  },
+  "dependencies": {
+    "@fastify/cookie": "^8.3.0",
+    "@fastify/cors": "^8.3.0",
+    "@fastify/jwt": "^7.0.0",
+    "@prisma/client": "^4.15.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.1.4",
+    "fastify": "^4.17.0",
+    "mysql2": "^3.3.3",
+    "zod": "^3.21.4"
+  }
+}
